@@ -1,0 +1,23 @@
+[
+  {
+    "id": "hair-gummies",
+    "name": "Hair Gummies",
+    "image": "/images/hair-gummies.jpg",
+    "benefits": ["Promotes hair growth", "Strengthens follicles"],
+    "ingredients": ["Biotin", "Vitamin D"],
+    "price": 29.99,
+    "description": "Delicious gummies for healthy hair.",
+    "faq": [{"q": "How to use?", "a": "Take 2 daily."}]
+  },
+  {
+    "id": "skin-tablets",
+    "name": "Skin Tablets",
+    "image": "/images/skin-tablets.jpg",
+    "benefits": ["Clears skin", "Reduces acne"],
+    "ingredients": ["Zinc", "Vitamin C"],
+    "price": 24.99,
+    "description": "Tablets for radiant skin.",
+    "faq": [{"q": "Side effects?", "a": "Minimal, consult doctor."}]
+  }
+  // Add more as needed
+]

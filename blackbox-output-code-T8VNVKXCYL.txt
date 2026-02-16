@@ -1,0 +1,35 @@
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import { contactSchema } from '@/lib/validationSchemas';
+import Input from '@/components/ui/Input';
+import Button from '@/components/ui/Button';
+
+const Contact = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm({
+    resolver: yupResolver(contactSchema),
+  });
+
+  const onSubmit = async (data) => {
+    try {
+      // Placeholder: Send to backend or email service
+      console.log('Form submitted:', data);
+      alert('Message sent!');
+    } catch (error) {
+      console.error('Submission error:', error);
+    }
+  };
+
+  return (
+    <div className="py-12 px-4 max-w-4xl mx-auto">
+      <h1 className="text-3xl font-bold mb-8">Contact Us</h1>
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
+        <Input label="Name" {...register('name')} error={errors.name?.message} />
+        <Input label="Email" type="email" {...register('email')} error={errors.email?.message} />
+        <textarea {...register('message')} className="w-full p-2 border rounded" placeholder="Message" />
+        <Button type="submit">Send</Button>
+      </form>
+    </div>
+  );
+};
+
+export default Contact;

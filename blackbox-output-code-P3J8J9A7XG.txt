@@ -1,0 +1,16 @@
+import { Suspense } from 'react';
+import ProductGrid from '@/components/sections/ProductGrid';
+import LoadingFallback from '@/components/LoadingFallback';
+
+const Products = () => {
+  return (
+    <div className="py-12 px-4 max-w-6xl mx-auto">
+      <h1 className="text-3xl font-bold mb-8">Our Products</h1>
+      <Suspense fallback={<LoadingFallback />}>
+        <ProductGrid />
+      </Suspense>
+    </div>
+  );
+};
+
+export default Products;

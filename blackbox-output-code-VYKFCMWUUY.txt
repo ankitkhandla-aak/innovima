@@ -1,0 +1,69 @@
+innovima-website/
+├── public/
+│   ├── images/  # Optimized images (e.g., hero.jpg, product1.jpg)
+│   └── favicon.ico
+├── src/
+│   ├── app/  # Next.js App Router
+│   │   ├── (pages)/  # Grouped pages
+│   │   │   ├── about/
+│   │   │   │   └── page.js
+│   │   │   ├── ai-wellness/
+│   │   │   │   └── page.js
+│   │   │   ├── blog/
+│   │   │   │   └── page.js  # Placeholder for blog
+│   │   │   ├── contact/
+│   │   │   │   └── page.js
+│   │   │   ├── privacy-policy/
+│   │   │   │   └── page.js
+│   │   │   ├── products/
+│   │   │   │   ├── [slug]/
+│   │   │   │   │   └── page.js  # Dynamic product detail
+│   │   │   │   └── page.js  # Shop/Products page
+│   │   │   ├── quiz/
+│   │   │   │   └── page.js
+│   │   │   ├── terms/
+│   │   │   │   └── page.js
+│   │   │   └── layout.js  # Shared layout for pages
+│   │   ├── globals.css  # Tailwind styles
+│   │   ├── layout.js  # Root layout
+│   │   ├── page.js  # Home page
+│   │   └── not-found.js  # 404 page
+│   ├── components/  # Reusable components
+│   │   ├── ui/  # Basic UI components
+│   │   │   ├── Button.js
+│   │   │   ├── Card.js
+│   │   │   ├── Form.js
+│   │   │   ├── Input.js
+│   │   │   ├── Modal.js
+│   │   │   └── Skeleton.js
+│   │   ├── layout/  # Layout components
+│   │   │   ├── Footer.js
+│   │   │   ├── Header.js
+│   │   │   └── Navigation.js
+│   │   ├── sections/  # Page sections
+│   │   │   ├── Hero.js
+│   │   │   ├── ProductGrid.js
+│   │   │   ├── Testimonials.js
+│   │   │   └── NewsletterSignup.js
+│   │   ├── ecommerce/  # Ecommerce components
+│   │   │   ├── Cart.js
+│   │   │   ├── CartItem.js
+│   │   │   ├── CheckoutForm.js
+│   │   │   └── ProductCard.js
+│   │   ├── ErrorBoundary.js  # Error boundary
+│   │   └── LoadingFallback.js  # Loading states
+│   ├── context/  # State management
+│   │   └── CartContext.js
+│   ├── data/  # Static data
+│   │   └── products.json  # Admin-editable product data
+│   ├── hooks/  # Custom hooks
+│   │   └── useFormValidation.js
+│   ├── lib/  # Utilities
+│   │   ├── utils.js  # Helpers (e.g., format price)
+│   │   └── validationSchemas.js  # Yup schemas
+│   └── styles/  # Additional styles if needed
+├── package.json
+├── tailwind.config.js
+├── next.config.js
+├── .env.local  # For secrets (e.g., form submission endpoint)
+└── README.md  # Deployment instructions
